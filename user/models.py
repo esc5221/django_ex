@@ -50,7 +50,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_superuser = models.BooleanField(default=False, help_text='Designates that this user has all permissions without explicitly assigning them.', verbose_name='superuser status')
     last_login = models.DateTimeField(default=timezone.now)
 
-    #seminars = models.ManyToManyField(Seminar, through='UserSeminar')
+    seminars = models.ManyToManyField(Seminar, through='seminar.UserSeminar')
 
     objects = CustomUserManager()
 

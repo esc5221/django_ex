@@ -7,7 +7,7 @@ import django.db.models.deletion
 
 class Migration(migrations.Migration):
 
-    replaces = [('seminar', '0001_initial'), ('seminar', '0002_userseminar'), ('seminar', '0003_seminar_nullable_capacity'), ('seminar', '0004_seminar_blankable_capacity'), ('seminar', '0005_seminar_blankable_desc')]
+    #replaces = [('seminar', '0001_initial'), ('seminar', '0002_userseminar'), ('seminar', '0003_seminar_nullable_capacity'), ('seminar', '0004_seminar_blankable_capacity'), ('seminar', '0005_seminar_blankable_desc')]
 
     initial = True
 

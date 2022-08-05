@@ -5,10 +5,8 @@ from django.contrib.auth import get_user_model
 class Seminar(models.Model):
     name = models.CharField(max_length=100)
     capacity = models.PositiveIntegerField()
-    nullable_capacity = models.PositiveIntegerField(null=True, blank=True)
-    blankable_capacity = models.PositiveIntegerField(blank=True)
-    blankable_desc = models.CharField(max_length=100, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+    type = models.CharField(max_length=100, choices=(('1', '세미나'), ('2', '스터디')))
 
 class UserSeminar(models.Model):
     user = models.ForeignKey(get_user_model(), null=False, on_delete=models.CASCADE)

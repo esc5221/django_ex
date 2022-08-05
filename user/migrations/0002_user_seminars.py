@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('seminar', '0002_userseminar'),
+        ('seminar', '0001_squashed_0005_seminar_blankable_desc'),
         ('user', '0001_initial'),
     ]
 
